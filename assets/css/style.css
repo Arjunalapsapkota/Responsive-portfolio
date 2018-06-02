@@ -19,6 +19,7 @@ body {
   clear: both;
 }
 
+
 h1,
 h2,
 h3,
@@ -80,6 +81,7 @@ h3 {
 nav {
   float: right;
   margin-top: 25px;
+  
 }
 
 nav a {
@@ -108,6 +110,10 @@ footer {
   background: #666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
+  position: fixed;
+  bottom: 0%;
+  left:0%;
+  width:100%;
 }
 
 h3, h2 {
@@ -170,11 +176,13 @@ h3, h2 {
 
 .auth-image {
   float: left;
-  width: 200px;
+  width:30%;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
 }
+
+
 
 /* contact page */
 
@@ -215,3 +223,52 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media screen and (max-width:200px)
+{
+.auth-image{
+  width:100%;
+}
+
+}
+
+@media screen and (min-width:201px)
+{
+.auth-image{
+  width:100%;
+}
+nav{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:1rem;
+}
+#logo{
+  width:100%;
+}
+
+}
+@media screen and (min-width:600px)
+{
+.auth-image{
+  width:50%;
+}
+nav{
+  float: right;
+  margin-top: 25px;
+  width:300px;
+  overflow: inherit;
+}
+#logo{
+  width:250px;
+}
+}
+@media screen and (min-width:1024px)
+{
+.auth-image{
+  width:30%;
+}}
+
+
+
